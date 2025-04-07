@@ -1,66 +1,71 @@
 # RTEMS UART Driver – GSoC 2025 Proposal
 
-This repository is created as part of my Google Summer of Code 2025 application to the RTEMS organization. The project aims to implement a Universal Asynchronous Receiver/Transmitter (UART) driver for a microcontroller (e.g., ATmega328p or 8051) in the RTEMS Real-Time Operating System.
+This repository contains my work for the **Google Summer of Code 2025** project with **RTEMS**.  
+The goal is to implement a **UART driver** for a microcontroller (e.g., 8051 or ATmega328p) within the RTEMS Real-Time Operating System.
 
 ---
 
-## 📌 Project Goal
+## 📌 Project Overview
 
-Implement and integrate a UART driver for a microcontroller into an RTEMS BSP (Board Support Package), enabling serial communication with features like:
-- Initialization of UART
-- Basic data transmission and reception
-- Interrupt-based handling
-- Testing and documentation
+- **Project Title:** UART Driver Implementation for a Microcontroller in RTEMS
+- **GSoC Org:** RTEMS
+- **Student:** Damaraparapu Anideep
+- **GitHub:** [ANIDEEPCODE](https://github.com/ANIDEEPCODE)
+- **Proposal:** See `docs/proposal.md`
 
 ---
 
-## 📁 Repository Structure
+## 📂 Folder Structure
 
 RTEMS-UART-Driver/ 
-├── README.md # This file 
 ├── docs/ 
-│       └── proposal.md # GSoC proposal document 
-├── src/
-│       └── uart_driver.c # Driver source code (WIP) 
+│     └── proposal.md # Full GSoC proposal 
+├── src/ 
+│     └── uart_driver.c # UART driver source code 
 ├── test/ 
-│       └── uart_test.c # Test application (WIP) 
-└── LICENSE # License for open-source contribution
+│     └── uart_test.c # Basic test application 
+└── README.md # You're reading it!
+
+yaml
+Copy
+Edit
+
+---
+
+## 🚧 Current Status
+
+- [x] Initial repository setup  
+- [ ] UART register mapping for microcontroller  
+- [ ] Transmit and receive functions  
+- [ ] Interrupt handling  
+- [ ] Integration with RTEMS BSP  
+- [ ] Test cases and documentation  
 
 ---
 
 ## ⚙️ Tools & Technologies
 
-- **Language**: C
-- **Target OS**: RTEMS
-- **Microcontrollers**: ATmega328p / 8051 (final decision pending)
-- **Debug/Test**: Hardware board or QEMU for emulation
+- C Programming
+- RTEMS RTOS
+- Microcontrollers (8051, Arduino, ATmega328p)
+- Linux, Git, GCC
+- Optional: QEMU for emulation/testing
 
 ---
 
-## 📆 Project Timeline
+## 🤝 How to Contribute
 
-Check the full project proposal in [`docs/proposal.md`](docs/proposal.md) for a detailed timeline, deliverables, and technical approach.
-
----
-
-## 🙋‍♂️ About Me
-
-I’m Damaraparapu Anideep, an embedded systems enthusiast.  
-Completed Embedded Systems training at Vector India, Hyderabad.  
-Strong in C, C++, RTOS, Linux, and microcontroller programming.
-
-- GitHub: [@ANIDEEPCODE](https://github.com/ANIDEEPCODE/anideep.git)
-- LinkedIn: [damaraparapu-anideep](https://www.linkedin.com/in/damaraparapu-anideep-370638241)
+Want to contribute or test it out?  
+Suggestions and improvements are always welcome!  
+Open an issue or submit a pull request. :)
 
 ---
 
-## 📬 Contact & Collaboration
+## 📬 Contact
 
-I’m open to feedback and contributions from RTEMS developers and the open-source community.  
-Feel free to file issues or contact me through GitHub or the RTEMS mailing list!
+📧 Email: damaraparapuanideep@gmail.com  
+🔗 LinkedIn: [Connect here](https://www.linkedin.com/in/damaraparapu-anideep-370638241)
 
 ---
 
-*This project is being developed as part of Google Summer of Code 2025 (GSoC).*
-
-
+> “Write code that matters. One bit at a time.”  
