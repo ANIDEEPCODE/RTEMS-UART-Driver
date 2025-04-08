@@ -1,71 +1,81 @@
-# RTEMS UART Driver – GSoC 2025 Proposal
+# 🧵 UART Driver Implementation for RTEMS
 
-This repository contains my work for the **Google Summer of Code 2025** project with **RTEMS**.  
-The goal is to implement a **UART driver** for a microcontroller (e.g., 8051 or ATmega328p) within the RTEMS Real-Time Operating System.
+This project is a UART (Universal Asynchronous Receiver/Transmitter) driver for a microcontroller in the RTEMS real-time operating system.
 
----
-
-## 📌 Project Overview
-
-- **Project Title:** UART Driver Implementation for a Microcontroller in RTEMS
-- **GSoC Org:** RTEMS
-- **Student:** Damaraparapu Anideep
-- **GitHub:** [ANIDEEPCODE](https://github.com/ANIDEEPCODE)
-- **Proposal:** See `docs/proposal.md`
+> 📌 **Project Type**: RTOS Driver Development | RTEMS  
+> 🧠 **Skills Used**: C Programming, Embedded Systems, Interrupts, RTOS Concepts
 
 ---
 
-## 📂 Folder Structure
+## 📌 Overview
 
-RTEMS-UART-Driver/ 
-├── docs/ 
-│     └── proposal.md # Full GSoC proposal 
-├── src/ 
-│     └── uart_driver.c # UART driver source code 
-├── test/ 
-│     └── uart_test.c # Basic test application 
-└── README.md # You're reading it!
-
-yaml
-Copy
-Edit
+The objective is to implement a basic UART driver supporting:
+- Initialization
+- Transmit and receive functionality
+- Interrupt handling
+- Integration with RTEMS BSP (Board Support Package)
 
 ---
 
-## 🚧 Current Status
+## 🎯 Why This Project?
 
-- [x] Initial repository setup  
-- [ ] UART register mapping for microcontroller  
-- [ ] Transmit and receive functions  
-- [ ] Interrupt handling  
-- [ ] Integration with RTEMS BSP  
-- [ ] Test cases and documentation  
+UART is a fundamental protocol in embedded systems for debugging, communication with sensors, and connecting peripheral devices.
 
----
-
-## ⚙️ Tools & Technologies
-
-- C Programming
-- RTEMS RTOS
-- Microcontrollers (8051, Arduino, ATmega328p)
-- Linux, Git, GCC
-- Optional: QEMU for emulation/testing
+✅ Benefits:
+- Adds UART support for specific microcontrollers in RTEMS  
+- Enables easier development/debugging on embedded platforms  
+- Helps beginners contribute meaningfully to RTEMS open source
 
 ---
 
-## 🤝 How to Contribute
+## 🛠 Target Hardware (Example)
 
-Want to contribute or test it out?  
-Suggestions and improvements are always welcome!  
-Open an issue or submit a pull request. :)
-
----
-
-## 📬 Contact
-
-📧 Email: damaraparapuanideep@gmail.com  
-🔗 LinkedIn: [Connect here](https://www.linkedin.com/in/damaraparapu-anideep-370638241)
+- ATmega328P (used in Arduino UNO)
+- 8051 Microcontroller  
+> You can port this driver to any microcontroller supported by RTEMS.
 
 ---
 
-> “Write code that matters. One bit at a time.”  
+## 🔧 Features
+
+- UART init with custom baud rate
+- Transmit and receive characters
+- Optional interrupt-based implementation
+- Clean, reusable C code following RTEMS guidelines
+
+---
+
+## 📂 File Structure
+
+RTEMS-UART-Driver/ ├── docs/ │ └── proposal.md ├── src/ │ └── uart_driver.c ├── tests/ │ └── uart_test.c ├── README.md
+
+---
+
+## 📄 Docs & Resources
+
+- [`design_proposal.md`](./docs/proposal.md): Architecture and flow
+- [`GSoC Proposal`](https://github.com/ANIDEEPCODE/RTEMS-UART-Driver/docs/Proposal.md): Full project plan for GSoC 2025
+- RTEMS Development Guide: https://docs.rtems.org/
+
+---
+
+## 🚀 Future Goals
+
+- Add circular buffer support
+- DMA-based UART support (if MCU allows)
+- Add example integration with RTEMS shell
+
+---
+
+## 🙋‍♂️ Author
+
+**Damaraparapu Anideep**  
+🔗 [GitHub](https://github.com/ANIDEEPCODE) | [LinkedIn](https://www.linkedin.com/in/damaraparapu-anideep-370638241)
+
+---
+
+⭐ *If this project helped or interested you, please give it a star!*
+
+---
+
+> 📝 *This repository was created as part of my [Google Summer of Code 2025](https://summerofcode.withgoogle.com/) proposal for RTEMS.*
